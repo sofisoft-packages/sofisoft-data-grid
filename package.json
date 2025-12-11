@@ -1,6 +1,6 @@
 {
   "name": "sofisoft-data-grid",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A powerful, feature-rich React data grid component built on top of Glide Data Grid. AG-Grid alternative with sorting, filtering, pagination, and more.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
