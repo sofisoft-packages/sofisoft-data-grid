@@ -19,13 +19,13 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsup && node -e \"const fs = require('fs'); const gdgCss = fs.readFileSync('node_modules/@glideapps/glide-data-grid/dist/index.css', 'utf8'); const customCss = fs.readFileSync('src/DataGrid.css', 'utf8'); fs.writeFileSync('dist/styles.css', gdgCss + '\\n\\n/* Sofisoft DataGrid Styles */\\n' + customCss);\"",
-    "build:watch": "tsup --watch",
-    "lint": "eslint src --ext .ts,.tsx",
-    "prepublishOnly": "npm run build",
-    "typecheck": "tsc --noEmit",
-    "test": "echo \"No tests yet\" && exit 0"
-  },
+  "build": "tsup && node build-css.js",
+  "build:watch": "tsup --watch",
+  "lint": "eslint src --ext .ts,.tsx",
+  "prepublishOnly": "npm run build",
+  "typecheck": "tsc --noEmit",
+  "test": "echo \"No tests yet\" && exit 0"
+},
   "keywords": [
     "react",
     "data-grid",
