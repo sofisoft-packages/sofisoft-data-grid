@@ -1,0 +1,75 @@
+{
+  "name": "sofisoft-data-grid",
+  "version": "1.0.0",
+  "description": "A powerful, feature-rich React data grid component built on top of Glide Data Grid. AG-Grid alternative with sorting, filtering, pagination, and more.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup && cp src/DataGrid.css dist/styles.css",
+    "build:watch": "tsup --watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "react",
+    "data-grid",
+    "datagrid",
+    "table",
+    "spreadsheet",
+    "glide-data-grid",
+    "ag-grid",
+    "ag-grid-alternative",
+    "react-table",
+    "editable-grid",
+    "sortable",
+    "filterable",
+    "pagination",
+    "excel",
+    "spreadsheet",
+    "virtualized",
+    "enterprise",
+    "typescript"
+  ],
+  "author": "sofisoft <sofisoft-npm@sofisoft.ma>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/sofisoft-data-grid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/sofisoft-data-grid/issues"
+  },
+  "homepage": "https://github.com/yourusername/sofisoft-data-grid#readme",
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "dependencies": {
+    "@glideapps/glide-data-grid": "^6.0.0",
+    "@glideapps/glide-data-grid-cells": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}

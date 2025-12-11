@@ -1,0 +1,36 @@
+# Source files (dist is included)
+src/
+
+# Config files
+tsconfig.json
+.eslintrc*
+.prettierrc*
+.editorconfig
+
+# Development
+node_modules/
+.git/
+.github/
+.vscode/
+.idea/
+
+# Test files
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+__tests__/
+coverage/
+
+# Build artifacts
+*.log
+*.tsbuildinfo
+
+# Examples
+examples/
+demo/
+
+# Misc
+.DS_Store
+Thumbs.db
+*.map
