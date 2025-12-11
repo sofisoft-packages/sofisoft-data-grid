@@ -9,4 +9,8 @@ export default defineConfig({
   sourcemap: true,
   minify: false,
   treeshake: true,
+  // Ignore CSS imports - we handle CSS separately
+  esbuildOptions(options) {
+    options.external = [...(options.external || []), '*.css'];
+  },
 });
