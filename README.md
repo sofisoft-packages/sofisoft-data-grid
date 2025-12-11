@@ -233,7 +233,7 @@ gridRef.current?.getSelectedRows();
 
 ## 📄 License
 
-MIT © [Your Name]
+MIT © [sofisoft-packages]
 
 ## 🤝 Contributing
 
